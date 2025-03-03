@@ -1,3 +1,14 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const userInput = document.getElementById("user-input");
+
+    // Listen for "Enter" key
+    userInput.addEventListener("keypress", function (event) {
+        if (event.key === "Enter") {
+            sendMessage();
+        }
+    });
+});
+
 function sendMessage() {
     const userInput = document.getElementById("user-input");
     const chatBox = document.getElementById("chat-box");
